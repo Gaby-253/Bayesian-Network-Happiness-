@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="world_happiness_report_2021" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Ladder_score">
+			<state id="s1_below_5" />
+			<state id="s2_5_6" />
+			<state id="s3_6_up" />
+			<probabilities>0.4966442953020134 0.1543624161073825 0.348993288590604</probabilities>
+		</cpt>
+		<cpt id="Regional_indicator">
+			<state id="SCentral_and_Eastern_Europe" />
+			<state id="SCommonwealth_of_Independent_States" />
+			<state id="SEast_Asia" />
+			<state id="SLatin_America_and_Caribbean" />
+			<state id="SMiddle_East_and_North_Africa" />
+			<state id="SNorth_America_and_ANZ" />
+			<state id="SSouth_Asia" />
+			<state id="SSoutheast_Asia" />
+			<state id="SSub_Saharan_Africa" />
+			<state id="SWestern_Europe" />
+			<parents>Ladder_score</parents>
+			<probabilities>0.04133333333333334 0.09466666666666666 0.028 0.028 0.1613333333333333 0.001333333333333334 0.09466666666666666 0.08133333333333333 0.468 0.001333333333333334 0.1708333333333333 0.1291666666666667 0.1291666666666667 0.3374999999999999 0.004166666666666666 0.004166666666666666 0.004166666666666666 0.08749999999999998 0.004166666666666666 0.1291666666666667 0.190566037735849 0.03962264150943395 0.02075471698113207 0.190566037735849 0.0962264150943396 0.07735849056603772 0.001886792452830188 0.02075471698113207 0.02075471698113207 0.3415094339622641</probabilities>
+		</cpt>
+		<cpt id="Logged_GDP_per_capita">
+			<state id="s1_below_8" />
+			<state id="s2_8_9" />
+			<state id="s3_9_up" />
+			<parents>Regional_indicator</parents>
+			<probabilities>0.01851851851851852 0.3518518518518518 0.6296296296296297 0.08333333333333333 0.75 0.1666666666666667 0.04761904761904762 0.3333333333333333 0.619047619047619 0.05 0.8500000000000001 0.1 0.05882352941176471 0.5882352941176471 0.3529411764705882 0.06666666666666667 0.06666666666666667 0.8666666666666667 0.2916666666666667 0.6666666666666667 0.04166666666666667 0.03333333333333333 0.7333333333333334 0.2333333333333334 0.6944444444444444 0.2777777777777778 0.02777777777777778 0.01515151515151515 0.01515151515151515 0.9696969696969697</probabilities>
+		</cpt>
+		<cpt id="Social_support">
+			<state id="s1_below_0" />
+			<state id="s2_0_0" />
+			<state id="s3_0_up" />
+			<parents>Ladder_score Logged_GDP_per_capita</parents>
+			<probabilities>0.3666666666666666 0.5666666666666667 0.06666666666666667 0.05128205128205128 0.5897435897435898 0.358974358974359 0.05555555555555555 0.05555555555555555 0.8888888888888888 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.0196078431372549 0.0196078431372549 0.9607843137254901 0.04166666666666666 0.1666666666666667 0.7916666666666666 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.02777777777777778 0.1111111111111111 0.8611111111111112 0.007936507936507936 0.03174603174603174 0.9603174603174603</probabilities>
+		</cpt>
+		<cpt id="Healthy_life_expectancy">
+			<state id="s1_below_57" />
+			<state id="s2_57_67" />
+			<state id="s3_67_up" />
+			<parents>Regional_indicator</parents>
+			<probabilities>0.01851851851851852 0.2962962962962963 0.6851851851851852 0.02564102564102564 0.9487179487179487 0.02564102564102564 0.04761904761904762 0.1904761904761905 0.7619047619047619 0.05 0.4 0.55 0.05882352941176471 0.8235294117647058 0.1176470588235294 0.06666666666666667 0.06666666666666667 0.8666666666666667 0.1428571428571428 0.7142857142857142 0.1428571428571428 0.03333333333333333 0.7333333333333334 0.2333333333333334 0.7117117117117118 0.2792792792792793 0.009009009009009009 0.01515151515151515 0.01515151515151515 0.9696969696969697</probabilities>
+		</cpt>
+		<cpt id="Freedom_to_make_life_choices">
+			<state id="s1_below_0" />
+			<state id="s2_0_0" />
+			<state id="s3_0_up" />
+			<parents>Social_support</parents>
+			<probabilities>0.1538461538461539 0.6153846153846154 0.2307692307692308 0.06976744186046512 0.5581395348837209 0.3720930232558139 0.02150537634408602 0.2365591397849462 0.7419354838709677</probabilities>
+		</cpt>
+		<cpt id="Perceptions_of_corruption">
+			<state id="s1_below_0" />
+			<state id="s2_0_0" />
+			<state id="s3_0_up" />
+			<parents>Ladder_score</parents>
+			<probabilities>0.01351351351351351 0.08108108108108109 0.9054054054054055 0.01388888888888889 0.1388888888888889 0.8472222222222221 0.1730769230769231 0.25 0.576923076923077</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6128.0 ACADEMIC" name="world-happiness-report-2021">
+			<node id="Regional_indicator">
+				<name>Regional indicator</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>392 221 464 269</position>
+			</node>
+			<node id="Ladder_score">
+				<name>Ladder score</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>281 85 353 133</position>
+				<barchart width="182" height="72" />
+			</node>
+			<node id="Logged_GDP_per_capita">
+				<name>Logged GDP per capita</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>523 170 595 218</position>
+			</node>
+			<node id="Social_support">
+				<name>Social support</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>409 86 481 134</position>
+				<barchart width="157" height="72" />
+			</node>
+			<node id="Healthy_life_expectancy">
+				<name>Healthy life expectancy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>393 311 465 359</position>
+				<barchart width="197" height="72" />
+			</node>
+			<node id="Freedom_to_make_life_choices">
+				<name>Freedom to make life choices</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>563 92 635 140</position>
+				<barchart width="188" height="72" />
+			</node>
+			<node id="Perceptions_of_corruption">
+				<name>Perceptions of corruption</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>272 226 358 283</position>
+			</node>
+			<textbox>
+				<caption>Input file: world-happiness-report-2021\nData rows: 149\nElapsed time: 1.25s\n\nLearning algorithm: Bayesian Search\nAlgorithm parameters:\nIterations: 21\nMax parent count: 8\nSample size: 50\nLink probability: 0.1\nPrior link probability: 0.001\nSeed: 0\nMax search time: 0\nNo background knowledge\n\nBest score in iteration 4: -2011.95\nEM Log Likelihood: -1675.32</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>30 206 219 444</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>
